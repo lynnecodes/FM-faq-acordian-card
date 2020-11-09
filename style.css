@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    color: hsl(238, 29%, 16%);
+}
+
+.content {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.content-left {
+    background-image: url('images/bg-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.content-left img {
+    transform: translateY(-20px);
+}
+
+hr {
+    color: hsl(240, 5%, 91%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

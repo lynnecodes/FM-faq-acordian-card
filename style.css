@@ -1,33 +1,109 @@
 body {
-    background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));    display: flex;
+    background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));    
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
     min-height: 100vh;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 12px;
     color: hsl(238, 29%, 16%);
+    margin: 0px;
+    padding: 0px;
 }
 
-.content {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-}
 
 .content-left {
     background-image: url('images/bg-pattern-mobile.svg');
     background-repeat: no-repeat;
     background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.8) translateX(60px);
+    position: absolute;
 }
 
 .content-left img {
-    transform: translateY(-20px);
+    transform: translateX(-13px) translateY(-10px);
 }
 
 hr {
-    color: hsl(240, 5%, 91%);
+    border-top: hsl(240, 5%, 91%);
+}
+
+.content-right {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 100px;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    width: 70vw;
+    box-shadow: 0px 10px 40px #454545;
+}
+
+.content-right h3 {
+    font-weight: 400;
+    font-size: 12px;
+    padding-top: 10px;
+    margin: 0px;
+}
+
+button {
+    padding: 0px;
+    padding-left: 10px;
+    margin: 0px;
+}
+
+.faq {
+    background: none;
+    text-align: left;
+    width: 100%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    margin-left: 10px;
+    margin-top: 5px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+
+
+.faq:after {
+    content: url('images/icon-arrow-down.svg');
+    float: right;
+    margin-left: 5px;
+    font-weight: 700;
+    transform: translateY(-15px) translateX(-10px);
+
+}
+
+.active:after {
+    content: url('images/icon-arrow-down.svg');
+    transform: translateY(-15px) translateX(-10px) rotate(180deg);
+}
+
+.faq-title h1 {
+    text-align: center;
+}
+
+.description {
+    color: hsl(240, 6%, 50%);
+    display: none;
+    overflow: hidden;
+}
+
+.description h3 {
+    margin: 0px;
+}
+
+.description p {
+    margin: 0px;
+    margin-left: 10px;
 }
 
 .attribution { 

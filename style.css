@@ -73,8 +73,12 @@ hr {
     padding-top: 10px;
 }
   
-.active, .accordion:hover {
+.active {
     color:hsl(237, 12%, 33%);
+}
+
+.accordion:hover {
+    color:  hsl(14, 88%, 65%);
 }
 
 .accordion:after {

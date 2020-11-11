@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Kumbh+Sans">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
@@ -13,48 +13,67 @@
 <body>
   <div class="content">
     <div class="content-left">
-      <img src="images/illustration-woman-online-mobile.svg">
+      <div class="content-image"><img src="images/illustration-box-desktop.svg"></div>
     </div>
     <div class="content-right">
+
       <div class="faq-title">
         <h1>FAQ</h1>
       </div>
-      <button id="boldTitle1" class="faq" onclick="bold1()">
-        <h3 id="title1" style="font-weight: normal;">How many team members can I invite?</h3>
+
+      <button class="accordion" onclick="bold1()">
+        <h3 id="title1" style="font-weight: normal;">
+          How many team members can I invite?
+        </h3>
       </button>
-      <div class="description">
+      <div class="panel">
         <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
       </div><hr>
-      <button id="boldTitle2" class="faq" onclick="bold2()">
-        <h3 id="title2" style="font-weight: normal">What is the maximum file upload size?</h3>
+
+      <button class="accordion" onclick="bold2()">
+        <h3 id="title2" style="font-weight: normal;">
+          What is the maximum file upload size?
+        </h3>
       </button>
-      <div class="description">
+      <div class="panel">
         <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
       </div><hr>
-      <button id="boldTitle3" class="faq" onclick="bold3()">
-        <h3 id="title3" style="font-weight: normal">How do I reset my password</h3>
+
+      <button class="accordion" onclick="bold3()">
+        <h3 id="title3" style="font-weight: normal;">
+          How do I reset my password?
+        </h3>
       </button>
-      <div class="description">
+      <div class="panel">
         <p>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
       </div><hr>
-      <button id="boldTitle4" class="faq" onclick="bold4()">
-        <h3 id="title4" style="font-weight: normal">Can I cancel my subscription?</h3>
+
+      <button class="accordion" onclick="bold4()">
+        <h3 id="title4" style="font-weight: normal;">
+          Can I cancel my subscription?
+        </h3>
       </button>
-      <div class="description">
+      <div class="panel">
         <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
       </div><hr>
-      <button id="boldTitle5" class="faq" onclick="bold5()">
-        <h3 id="title5" style="font-weight: normal">Do you provide additional support?</h3>
+
+      <button class="accordion" onclick="bold5()">
+        <h3 id="title5" style="font-weight: normal;">
+          Do you provide additional support?
+        </h3>
       </button>
-      <div class="description">
+      <div class="panel">
         <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
       </div><hr>
+
+
+
+     
     </div>
   </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    <br>
     Coded by <a href="https://lynne.codes/">Lynne Buencamino</a>.
   </div>
   <script src="javascript.js"></script>

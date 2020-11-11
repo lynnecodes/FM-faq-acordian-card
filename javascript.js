@@ -1,19 +1,4 @@
 
-var faq = document.getElementsByClassName("faq");
-var i;
-
-for (i = 0; i < faq.length; i++) {
-  faq[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var description = this.nextElementSibling;
-    if (description.style.display === "block") {
-      description.style.display = "none";
-    } else {
-      description.style.display = "block";
-    }
-  });
-}
-
 function bold1() {
    var boldTitle1 = document.getElementById("title1").style.fontWeight ;
  
@@ -63,3 +48,20 @@ function bold5() {
             document.getElementById("title5").style.fontWeight = 'normal';
         }
     }
+
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}

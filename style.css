@@ -28,6 +28,7 @@ hr {
 
 @media only screen and (max-width: 375px) {
     .content {
+        transform: translateY(-30px);
         background: none;
         border-radius: 0px;
         box-shadow: none;
@@ -77,21 +78,23 @@ hr {
         padding-bottom: 40px;
         padding-top: 100px;
         box-shadow: 0px 10px 40px #454545;
-        transform: translateY(-90px);
+        transform: translateY(-50px);
     }
     
     .content-left {
         background-image: url('images/bg-pattern-mobile.svg');
         background-repeat: no-repeat;
-        background-position: center;
-        transform: translateX(10%);
+        background-size: 200px;
+        background-position: 60px 50px;
+        transform: translateY(110px);
         z-index: 1;
     }
 
     .content-image-mobile {
         background-image: url('images/illustration-woman-online-mobile.svg');
         background-repeat: no-repeat;
-        background-size: 200px 200px;
+        background-size: 230px;
+        transform: translateX(30px) translateY(-50px);
         height: 200px;
     }
 
@@ -160,4 +163,10 @@ hr {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 375px) {
+    .attribution {
+        padding-top: 0;
+    }
 }

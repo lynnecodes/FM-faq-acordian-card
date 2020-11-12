@@ -28,7 +28,7 @@ hr {
 
 @media only screen and (max-width: 375px) {
     .content {
-        transform: translateY(-30px);
+        transform: translateY(-40px);
         background: none;
         border-radius: 0px;
         box-shadow: none;
@@ -163,10 +163,4 @@ hr {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
-}
-
-@media only screen and (max-width: 375px) {
-    .attribution {
-        padding-top: 0;
-    }
 }
